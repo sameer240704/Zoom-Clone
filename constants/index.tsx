@@ -21,7 +21,7 @@ export const sidebarLinks = [
   },
   {
     label: "Personal Room",
-    imageUrl: "/icons/add-meeting.svg",
+    imageUrl: "/icons/personal.svg",
     route: "/personal-room",
   },
 ];
