@@ -19,14 +19,14 @@ import { link } from "fs";
 const MobileNav = () => {
   const pathname = usePathname();
   return (
-    <section className="w-screen min-w-[264px]">
+    <section className="w-full max-w-[264px]">
       <Sheet>
         <SheetTrigger>
           <Image
             src="/icons/hamburger.svg"
             alt="hamburger"
-            height={36}
-            width={36}
+            height={30}
+            width={30}
             className="cursor-pointer sm:hidden"
           />
         </SheetTrigger>
@@ -35,8 +35,9 @@ const MobileNav = () => {
             <Image
               src="/icons/logo.svg"
               alt="Virtual Vibe Logo"
-              width={48}
-              height={48}
+              width={36}
+              height={36}
+              className="mr-1"
             />
             <p className="text-[28px] font-extrabold text-white">
               Virtual Vibe
@@ -56,10 +57,10 @@ const MobileNav = () => {
                         href={item.route}
                         key={item.label}
                         className={cn(
-                          `flex gap-4 items-center w-full p-4 rounded-lg hover:bg-slate-900`,
+                          `flex gap-4 items-center w-full p-4 rounded-xl hover:bg-slate-900`,
                           {
                             "hover:bg-slate-900": !isActive,
-                            "bg-green-600 hover:bg-green-600": isActive,
+                            "bg-blue-1 hover:bg-blue-1": isActive,
                           }
                         )}
                       >
