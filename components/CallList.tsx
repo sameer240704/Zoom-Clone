@@ -87,7 +87,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
                 : "/icons/recordings.svg"
             }
             title={
-              (meeting as Call).state?.custom?.description.substring(0, 30) ||
+              (meeting as Call).state?.custom?.description?.substring(0, 30) ||
               (meeting as CallRecording).filename?.substring(0, 30) ||
               "Personal Meeting"
             }
@@ -113,7 +113,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
           />
         ))
       ) : (
-        <h1>{callsFalse}</h1>
+        <h1 className="text-xl text-sky-1 font-semibold">{callsFalse}</h1>
       )}
     </div>
   );
