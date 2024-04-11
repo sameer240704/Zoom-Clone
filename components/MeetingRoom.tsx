@@ -30,6 +30,7 @@ const MeetingRoom = () => {
   const isPersonalRoom = !!searchParams.get("personal");
   // true -> !true -> false -> !false -> true
   // undefined -> !undefined -> true -> !true -> false
+
   const [layout, setLayout] = useState<CallLayoutType>("speaker-left");
   const [showParticipants, setShowParticipants] = useState(false);
 

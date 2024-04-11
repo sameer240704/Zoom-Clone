@@ -21,7 +21,8 @@ const EndCallButton = () => {
     try {
       await call.endCall();
       toast({
-        title: "Your meeting has been ended",
+        title: "Your meeting has ended",
+        description: "Click on new meeting to start an instant meeting",
       });
       router.push("/");
     } catch (error) {
