@@ -56,7 +56,10 @@ const MeetingCard = ({
         </div>
         {!isPreviousMeeting && (
           <div className="flex gap-2">
-            <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
+            <Button
+              onClick={handleClick}
+              className="rounded-[7px] bg-blue-1 px-6"
+            >
               {myButtonIcon && (
                 <Image
                   src={myButtonIcon}
@@ -76,7 +79,7 @@ const MeetingCard = ({
                     "Use the copied link to join the meeting in future",
                 });
               }}
-              className="bg-dark-4 px-6"
+              className="bg-dark-4 px-6 rounded-[7px]"
             >
               <Image
                 src="/icons/copy.svg"

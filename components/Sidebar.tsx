@@ -20,7 +20,7 @@ const Sidebar = () => {
               href={item.route}
               key={item.label}
               className={cn(
-                `flex gap-4 items-center justify-start p-4 rounded-xl hover:bg-slate-900`,
+                `flex gap-4 items-center justify-start p-4 rounded-[7px] hover:bg-slate-900`,
                 {
                   "hover:bg-slate-900": !isActive,
                   "bg-blue-1 hover:bg-blue-1": isActive,
