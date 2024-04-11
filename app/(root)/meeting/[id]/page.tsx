@@ -17,10 +17,10 @@ const Meeting = ({ params: { id } }: { params: { id: string } }) => {
     <main className="h-screen w-full">
       <StreamCall call={currentCall}>
         <StreamTheme>
-          {isSetupComplete ? (
-            <MeetingRoom />
-          ) : (
+          {!isSetupComplete ? (
             <MeetingSetup setIsSetupComplete={setIsSetupComplete} />
+          ) : (
+            <MeetingRoom />
           )}
         </StreamTheme>
       </StreamCall>
